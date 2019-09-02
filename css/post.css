@@ -44,7 +44,7 @@
 
 }
 
-#textArea1{
+#textArea1{/*adding style for text area */
     width: 99.5%;
     height: 155px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -81,4 +81,4 @@
     margin-top:2px;
 }
 
-.space { padding: 25px; }
+.space { padding: 25px; }/*adding spacing between top header and blog body*/
