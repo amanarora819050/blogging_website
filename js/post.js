@@ -1,10 +1,10 @@
 
-function editSaveText(){  
+function editSaveText(){//function to edit-save blog header and body
     var buttonLabel = document.getElementsByClassName('blogButton')[0].innerHTML;
 
-    if(buttonLabel == 'Edit <i class="fa fa-edit"></i>'){
-        var bodyText = document.getElementById('blogBody').innerText;
-        var blogTitle = document.getElementById('blogTitleNew').innerText;
+    if(buttonLabel == 'Edit <i class="fa fa-edit"></i>'){//This part of function identifies Edit button label and make header and body editable
+        var bodyText = document.getElementById('blogBody').innerText;//storing value of blog body in variable
+        var blogTitle = document.getElementById('blogTitleNew').innerText;//storing value of blog body in variable
 
         document.getElementById('blogBody').innerHTML = '';
         document.getElementById('blogTitleNew').innerHTML = '';
@@ -13,7 +13,7 @@ function editSaveText(){
         document.getElementById('textBox').value = blogTitle;
         document.getElementsByClassName('blogButton')[0].innerHTML='Save <i class="fa fa-save"></i>';
         
-    }else{
+    }else{//This part of function identifies Save button label and saves the edited content
         var bodySavedText = document.getElementById('textArea1').value;
         var blogTitleSaved = document.getElementById('textBox').value;
         
@@ -26,28 +26,28 @@ function editSaveText(){
     }
 }
 
-var commentsDetails = [];
+var commentsDetails = [];//declaring empty array to capture comments details
 function addComments(id){
     var addEventName = id.value +'<br>';
     var a = document.getElementById('userComments');
 
     commentsDetails.push(addEventName);
     document.getElementById('addEventNames').innerHTML = '';
-    for(var i = commentsDetails.length - 1; i >= 0 ; i--){
+    for(var i = commentsDetails.length - 1; i >= 0 ; i--){//logic to insert comments in latest comment on top
         document.getElementById('addEventNames').innerHTML += '<p class="commentsStyle">'+commentsDetails[i]+'</p>';  
     }    
-    a.value=a.defaultValue;
+    a.value=a.defaultValue;//erasing last comment from the comment box
 }
 
 var count = 0;
 
-function like(){
+function like(){//function to implement Like feature
 count++;
 
-if(count == 1)
+if(count == 1)//logic for single like
 document.getElementById("likeCount").innerHTML = "1 person likes this!";
 
-if(count > 1){
+if(count > 1){//logic for likes more than 1
 document.getElementById("likeCount").innerHTML = count+" people have liked this!";
 
 }
