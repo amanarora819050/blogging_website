@@ -2,6 +2,7 @@
     font-size: 150%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
+    align:center;
 }
 .blogText {
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -13,7 +14,71 @@
     font-size: 30px;
 }
 .blogContent{
+    flex-direction: column;
+    width: 85%;
+    align-content: center;
+    align-items: center;
+    margin: 77px;
 
 }
 
+#blogBody{
+    padding-top: 30px;
+}
+
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+
+.blogButton{
+    color: white;
+    background-color:  #FF1493;
+    border:none;
+    height:22px;
+
+}
+
+#textbox{
+    font-size: 74%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    width: 187px;
+
+}
+
+#textArea1{
+    width: 99.5%;
+    height: 155px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 7px;
+}
+
+#addEventNames{
+    background-color: #D3D3D3;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width:51%;
+    
+}
+
+.commentsStyle{
+    margin: 6px 11px;
+    height: 12px;
+    padding: 10px;
+    background-color: white;
+    width:93%;
+
+}
+
+#userComments{
+    width: 50%;
+    height: 50px;
+}
+
+#likeBlog{
+    width: 70px;
+}
+
+.blogBodyadjust{
+    margin-top:2px;
+}
+
+
